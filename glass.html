@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Protfolio</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="/img/icon.ico" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- all flont setting -->
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Raleway", sans-serif;
+      }
+      .w3-row img {
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        opacity: 0.93;
+        cursor: pointer;
+      }
+      .w3-row img:hover {
+        opacity: 1;
+      }
+      a:link {
+        text-decoration: none;
+      }
+    </style>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Accordion
+      function myAccFunc() {
+        var x = document.getElementById("open");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+
+      // Click on the "protfolio" link on page load to open the accordion
+      document.getElementById("b1").click();
+    </script>
+  </head>
+
+  <body class="w3-sand w3-content" style="max-width:2000px">
+    <!-- Sidebar/menu -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-teal w3-animate-left w3-text-black w3-collapse w3-top w3-center"
+      style="z-index:3;width:230px;font-weight:bold"
+      id="mySidebar"
+    >
+      <br />
+      <a href="/index.html" style="text-decoration:none"
+        ><h3 class="w3-padding-64 w3-center">
+          <b>YEUNG<br />TONY</b>
+        </h3></a
+      >
+
+      <a
+        onclick="myAccFunc()"
+        href="javascript:void(0)"
+        class="w3-bar-item w3-button"
+        id="b1"
+        >PORTFOLIO<i class="fa fa-caret-down"></i
+      ></a>
+      <div id="open" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        <a href="/ceramic.html" class="w3-bar-item w3-button">ceramic</a>
+        <a href="#0" class="w3-bar-item w3-button"><u>glass</u></a>
+        <a href="/jewellery.html" class="w3-bar-item w3-button">jewellery</a>
+        <a href="/mix_media.html" class="w3-bar-item w3-button">mix media</a>
+        <a href="/photography.html" class="w3-bar-item w3-button"
+          >photography</a
+        >
+        <a href="/wearable.html" class="w3-bar-item w3-button">wearable</a>
+      </div>
+
+      <a
+        href="/me.html"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button"
+        style="text-decoration:none"
+        >FIND ME</a
+      >
+      <br class="w3-opacity" />
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-padding w3-hide-large"
+        ><img src="/img/exit.jpg" style="width:20%" class="w3-round"
+      /></a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-teal w3-padding-16 w3-hide-large">
+      <span class="w3-left-algin w3-xlarge w3-padding w3-text-black"
+        >Kakit</span
+      >
+    </header>
+
+    <header class="w3-container w3-top w3-hide-large">
+      <a
+        href="javascript:void(0)"
+        class="w3-right w3-button w3-xlarge"
+        onclick="w3_open()"
+        ><img
+          src="/img/paw.png"
+          style="max-width: 39.5px; width: 100%;"
+          class="w3-round w3-white"
+      /></a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large w3-animate-opacity"
+      onclick="w3_close()"
+      style="cursor:pointer"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:230px; margin-top:0px">
+      <!-- Push down content on small screens -->
+      <div class="w3-hide-large" style="margin-top:68px"></div>
+
+      <!--Mine-->
+      <style type="text/css">
+        .body1 {
+          text-align: right;
+          margin-top: 10pt;
+          margin-right: 16pt;
+          opacity: 0.1;
+          font-family: "Raleway", sans-serif;
+        }
+        .w3-row {
+          margin-left: 16pt;
+          margin-right: 16pt;
+        }
+      </style>
+
+      <h2 class="body1" id="0">Glass</h2>
+      <br />
+      <p class="body1"></p>
+
+      <!-- Modal for full size images on click-->
+      <div
+        id="modal01"
+        class="w3-modal w3-black"
+        style="padding-top:0"
+        onclick="this.style.display='none'"
+      >
+        <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <div
+          class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+        >
+          <img id="img01" class="w3-image" />
+          <p id="caption"></p>
+        </div>
+      </div>
+
+      <!-- Photo grid 1 -->
+      <div class="w3-row w3-white w3-padding">
+        <div class="w3-rest w3-center w3-padding">
+          <img
+            src="/img/8 sun 1.jpg"
+            style="width:100%; max-width: 490px;"
+            onclick="onClick(this)"
+            alt="<i>Half of Water, 2019</i>"
+          />
+        </div>
+      </div>
+      <p
+        class="w3-right w3-white w3-right-align w3-padding w3-round"
+        style="margin-right:23px"
+      >
+        <i>Half of Water, 2019</i><br />Glass blowing, Copper Alloy, Cork<br />14
+        x 14 x 13.5 cm      <hr class="w3-opacity w3-padding-64" />
+
+      </p>
+
+      <!-- Pagination -->
+      <footer class="w3-right">
+        <div class="w3-padding-16" style="text-align:right; opacity: .6;">
+          <div class="w3-bar">
+            <a
+              href="#0"
+              class="w3-bar-item w3-button w3-hover-black w3-white w3-spin"
+              >Top</a
+            >
+          </div>
+        </div>
+      </footer>
+
+      <!-- End page content -->
+    </div>
+  </body>
+</html>

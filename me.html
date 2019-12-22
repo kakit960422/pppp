@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="/img/icon.ico" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- all flont setting -->
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: 0px; margin-left: 0px; margin-right: 0px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+     
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    
+    // Accordion 
+    function myAccFunc() {
+    var x = document.getElementById("open");
+    if (x.className.indexOf("w3-show") == -1) {x.className += " w3-show";} 
+    else {x.className = x.className.replace(" w3-show", "");}
+    }
+
+    // Click on the "protfolio" link on page load to open the accordion
+    document.getElementById("b1").click();
+    </script>
+
+</head>
+
+
+<body class="w3-yellow w3-content" style="max-width:2000px">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-teal w3-animate-left w3-text-black w3-collapse w3-top w3-center" style="z-index:3;width:230px;font-weight:bold" id="mySidebar"><br>
+    <a href="index.html" style="text-decoration:none"><h3 class="w3-padding-64 w3-center" ><b>YEUNG<br>TONY</b></h3></a>
+    
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-bar-item w3-button" id="b1">PORTFOLIO<i class="fa fa-caret-down"></i></a>
+<div id="open" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+  <a href="/ceramic.html" class="w3-bar-item w3-button">ceramic</a>
+  <a href="/glass.html" class="w3-bar-item w3-button">glass</a>
+  <a href="/jewellery.html" class="w3-bar-item w3-button">jewellery</a>
+  <a href="/mix_media.html" class="w3-bar-item w3-button">mix media</a>
+  <a href="/photography.html" class="w3-bar-item w3-button">photography</a>
+  <a href="/wearable.html" class="w3-bar-item w3-button">wearable</a>
+</div>
+
+    <a href="#0" onclick="w3_close()" class="w3-bar-item w3-button" style="text-decoration:none">FIND ME</a> 
+    <br class="w3-opacity">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large"><img src="/img/exit.jpg" style="width: 20%" class="w3-round"></a>
+  </nav>
+  
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-teal w3-padding-16 w3-hide-large">
+    <span class="w3-left-algin w3-xlarge w3-padding w3-text-black">Kakit</span>
+  </header>
+
+  <header class="w3-container w3-top w3-hide-large">
+    <a href="javascript:void(0)" class="w3-right w3-button w3-xlarge" onclick="w3_open()"><img src="/img/paw.png" style="max-width: 39.5px; width: 100%;" class="w3-round w3-white"></a>
+  </header>
+
+  
+<!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  
+
+  
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:230px" id="0">
+  
+    <!-- Push down content on small screens --> 
+    <div class="w3-hide-large" style="margin-top:68px"></div>
+
+
+<!-- About section -->
+<div class="w3-container w3-center w3-text-grey w3-padding-32">
+  <h3><b>hey,</b></h3>
+  <img src="/img/cat2.png" alt="My cat" class="w3-image w3-padding w3-white w3-border w3-padding w3-margin-bottom" width="400" height="300"">
+  <hr class="w3-opacity w3-content w3-justify" style="max-width:600px">
+  <div class="w3-content w3-justify" style="max-width:600px">
+    <h3>Tony Yeung</h3>
+    <p>Don't know what to say about me, may my portfolio and the hashtags let you know me more. Website is hard to set-up. You can contact me btw. <br>Finally, 希望世界和平.
+    <br><br>#HKBU AVA student, #craft and design, #2020 graduate, #vegetarian, #cats lover,</p>
+    <p class="w3-sand w3-padding">mail: kakit960422@gmail.com
+    <br>tel: +852 6849 8377<p>
+    <hr class="w3-opacity">
+</div>
+
+
+    <!-- Pagination -->
+  <footer>
+  <div class="w3-right w3-padding-32 w3-bar" style="text-align:right; opacity: .6;">
+      <br><a href="#0" class="w3-bar-item w3-button w3-hover-black w3-white w3-spin">Top</a>
+
+  </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+</body>
+</html>
